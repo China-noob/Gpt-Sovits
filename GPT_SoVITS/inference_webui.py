@@ -287,7 +287,6 @@ def add_to_history(audio,input_text):
 
     return [*sync_output_history_to_checkbox_audio()]
 
-
 # 连续抽卡
 
 def inference_take(text, text_lang, 
@@ -321,7 +320,6 @@ def inference_take(text, text_lang,
         output_history.insert(0,audio)
 
     return output_history
-
 
 
 def clear_history():
@@ -363,13 +361,6 @@ def merge_selected_history(*selected_list):
         delete_selected_history(*selected_list)       
         return add_to_history((32000, combined),labels)
     return [*sync_output_history_to_checkbox_audio()]
-
-
-
-
-
-
-
 
 def change_sovits_weights(sovits_path):
     
