@@ -867,7 +867,7 @@ def save_sovits_latest_model(name,models_folder,outputdir):
         if i.endswith(f"{latest_epoch}.pth"):
             
             latest_model = i
-    shutil.copy(os.path.join(models_folder, latest_model), os.path.join(outputdir, f"{name}_gpt_latest_model.pth"))
+    shutil.copy(os.path.join(models_folder, latest_model), os.path.join(outputdir, f"{name}_gpt.pth"))
 def save_gpt_latest_model(name,models_folder,outputdir):
     model_files = [f for f in os.listdir(models_folder) if f.startswith(name + "-")]
     print(model_files)
@@ -875,7 +875,7 @@ def save_gpt_latest_model(name,models_folder,outputdir):
     for i in model_files:
         if i.endswith(f"{latest_epoch}.ckpt"):
             latest_model = i
-    shutil.copy(os.path.join(models_folder, latest_model), os.path.join(outputdir,f"{name}_sovits_latest_model.pth"))
+    shutil.copy(os.path.join(models_folder, latest_model), os.path.join(outputdir,f"{name}_sovits.ckpt"))
 
 
 if __name__ == '__main__':
