@@ -76,18 +76,18 @@ SoVITS_weights
 
 输出模型固定名字gpt.pth sovits.pth 文件夹目录为输入文件夹
 
-
+例子：python .\train.py -n test -i D:\data\test -o D:\data\test
 ---------------------------------------------------------------------
 合成：
 python inference.py -text -text_lang -ref_audio_path -prompt_text -rompt_lang -top_k -top_p -temperature -text_split_method -batch_size -speed_factor -ref_text_free -split_bucket -fragment_interval
 
 -text 文本 （中日英）
--text_lang 文本语言（"中文",#全部按中文识别
-                    "英文",#全部按英文识别
-                    "日文",#全部按日文识别
-                    "中英混合",#按中英混合识别
-                    "日英混合",#按日英混合识别
-                    "多语种混合",#多语种启动切分识别语种
+-text_lang 文本语言（"中文"
+                    "英文"
+                    "日文"
+                    "中英混合"
+                    "日英混合"
+                    "多语种混合"
                     ）
 -ref_audio_path 参考音频路径
 -prompt_text 参考音频文本
