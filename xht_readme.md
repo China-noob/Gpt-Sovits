@@ -80,7 +80,7 @@ SoVITS_weights
 例子：python .\train.py -n test -i D:\data\test -o D:\data\test
 ---------------------------------------------------------------------
 合成：
-python inference.py -text -text_lang -ref_audio_path -prompt_text -rompt_lang -top_k -top_p -temperature -text_split_method -batch_size -speed_factor -ref_text_free -split_bucket -fragment_interval
+python inference.py --text --text_lang --ref_audio_path --prompt_text --rompt_lang --top_k --top_p --temperature --text_split_method --batch_size --speed_factor --ref_text_free --split_bucket --fragment_interval --name
 
 -text 文本 （中日英）
 -text_lang 文本语言（"中文"
@@ -108,6 +108,7 @@ python inference.py -text -text_lang -ref_audio_path -prompt_text -rompt_lang -t
 -ref_text_free 是否开启无参考文本模式 默认false
 -split_bucket 分割桶 默认 True
 -fragment_interval 片段间隔 默认 0.3
+--name 模型名
 
 例子python .\inference.py --ref_audio_path logs\test\5-wav32k\11.wav_0000040320_0000156160.wav_0000000000_0000116160.wav --prompt_text 我们今天讲第四章概要设计
 ```
