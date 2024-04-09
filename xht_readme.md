@@ -1,3 +1,4 @@
+```
 --环境搭建
 
 1：创建conda环境
@@ -109,3 +110,4 @@ python inference.py -text -text_lang -ref_audio_path -prompt_text -rompt_lang -t
 -fragment_interval 片段间隔 默认 0.3
 
 例子python .\inference.py --ref_audio_path logs\test\5-wav32k\11.wav_0000040320_0000156160.wav_0000000000_0000116160.wav --prompt_text 我们今天讲第四章概要设计
+```
